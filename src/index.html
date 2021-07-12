@@ -5,6 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="index.css">
+  <script defer src="scripts/app.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
+  <script defer src="scripts/firebase.js"></script>
   <title>HomeServ</title>
 </head>
 <body>
@@ -13,12 +18,33 @@
     <p style="color: #727272">We're glad to see you 😊</p>
   </div>
   <br><br>
-  <div class="login">
-    <h3><span class="Login" onclick="switchcolors('l')" id="lo">Login</span> or <span onclick="switchcolors('s')" class="su" id="su">Sign Up</span></h3>
-    <input type="email" name="email" id="email"  placeholder="Email"><br><br>
-    <input type="password" name="password" id="password" placeholder="Password">
+  <div class="mainintro">
+    
+      <div id="alt2"><h3><span onclick="switch2()" class='su'>Login</span> or <span class="Login" >Sign Up</span></h3></div>
+      
+      <div id="alt1"><h3><span class="Login">Login</span> or <span class="su" onclick="switch1()">Sign Up</span></h3></div>
+
+    <div class="login" id="LoForm">
+      <input type="email" name="email" id="email"  placeholder="Email"><br><br>
+      <input type="password" name="password" id="password" placeholder="Password">
+    </div>
+    <div class="signup" id="SuForm">
+      <input type="email" name="email" id="semail"  placeholder="Email"><br><br>
+      <input type="username" name='username' id='username' placeholder="Username"><br><br>
+      <input type="password" name="password" id="password" placeholder="Password"><br><br>
+      <input type="password" name="password" id="spassword" placeholder="Confirm Password">
+    </div>
+    
+    <br><br><br><br><br>
+    <div id="btnl"><a href="#" onclick='signin()' class='rounded-black-btn'>	&nbsp;	&nbsp;	&nbsp;		&nbsp;   &nbsp; <span id='lsbtn'>Login</span>	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;</a></div>
+    <div id="btns"><a href="#" onclick='signup("document.getElementById(\"semail\").value), document.getElementById(\"password\").value);")' class='rounded-black-btn'>	&nbsp;	&nbsp;	&nbsp;		&nbsp;   &nbsp; <span id='lsbtn'>Sign Up</span>	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;</a></div>
+
+
+    <br><br><p style="color: rgb(243, 24, 24);" id="error"></p>
   </div>
-  <div class="signup"></div>
+
+
+
   <div class="footer">
     <p style="color: #757575;">
       <span><a href="#" style="color: #757575; text-decoration: none;">Contact</a></span>
@@ -27,8 +53,6 @@
       <span> | </span>
       <span><a href="#" style="color: #757575; text-decoration: none;">API</a></span>
     </p>
-
   </div>
 </body>
-<script src="app.js"></script>
 </html>

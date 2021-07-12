@@ -36,3 +36,44 @@ button:focus {
 .Login:hover{cursor: pointer;}
 .su{color: #757575;}
 .su:hover{cursor: pointer;}
+
+
+.signup{display: none;}
+#alt2{display: none;}
+#btns{display: none;}
+
+.rounded-black-btn{
+  text-decoration: none;
+  color: #fff;
+  background-color: #000;
+  padding: 15px;
+  border-radius: 22px;
+  width: 150px;
+}
+.rounded-black-btn:hover{
+  border: 1px solid black;
+  transition: 1s;
+  background-color: #fff;
+  color: #000;
+}
+.mainintro{
+  height: 50px;
+}
+
+
+
+
+.start{
+  text-decoration: none;
+  color: #fff;
+  background-color: #000;
+  padding: 15px;
+  border-radius: 22px;
+  width: 150px;
+}
+.start:hover{
+  transition: 1s;
+  border: 1px solid black;
+  color: #000;
+  background-color: #fff;
+}
