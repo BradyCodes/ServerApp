@@ -1,11 +1,11 @@
 let firebaseConfig = {
-    apiKey: "AIzaSyArQFKM4s6n6Z_05bWv72Ox_M4E5vPXCAY",
-    authDomain: "homeserver-ede88.firebaseapp.com",
-    projectId: "homeserver-ede88",
-    storageBucket: "homeserver-ede88.appspot.com",
-    messagingSenderId: "779699772869",
-    appId: "1:779699772869:web:9ac40446d348d5bac2bfac",
-    measurementId: "G-T0CYCZ8VQ2"
+    apiKey: ,
+    authDomain: ,
+    projectId: ,
+    storageBucket: ,
+    messagingSenderId:,
+    appId: ,
+    measurementId: 
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
